@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="Ku15BLbJeIUPIS0zybj3C8" LanguageVersion="2024.6.0-0173-g0fa37470f9" Version="0.128">
+  <NugetDependency Id="VTP4cfdBgHuOdJfzfYHTC2" Location="VL.CoreLib" Version="2024.6.0-0173-g0fa37470f9" />
+  <Patch Id="NjCRkdxC0O7MbNShskSZ8E">
+    <Canvas Id="KhFIDIJyD3wNTk7uQOwXsL" DefaultCategory="Main" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="Ossk4MyIhSNNW6xGhzGWPE">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="DpwM34rzfgxMlsV4u9zp07">
+        <Canvas Id="JL0C7om5uFDPUizV2IfDBf" CanvasType="Group">
+          <Pad Id="LY6L5Yh4KttP4A7tryAfyJ" Comment="IP" Bounds="1001,668,100,15" ShowValueBox="true" isIOBox="true" Value="192.168.5.164">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="Gk9aLt2ozh7OnO5RpJFTvh" Comment="Enabled" Bounds="1021,690,80,57" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="U5OvzJbfIaKPMxNUjT6lbN" Comment="ExposureMode" Bounds="642,230,20,15" ShowValueBox="true" isIOBox="true" Value="2">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:maximum p:Type="Int32">4</p:maximum>
+              <p:minimum p:Type="Int32">0</p:minimum>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="JgaKehmQRDDNbODZ22D1E1" Comment="Shutter" Bounds="702,296,20,15" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:maximum p:Type="Int32">21</p:maximum>
+              <p:minimum p:Type="Int32">0</p:minimum>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="MhmJcaGkLjlLTE4iLXqWck" Comment="AutoFocus" Bounds="621,208,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="MWzT34cbAhdNVRHANJVY0b" Comment="Iris" Bounds="722,318,20,15" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:maximum p:Type="Int32">21</p:maximum>
+              <p:minimum p:Type="Int32">0</p:minimum>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="L2X3x4jGOmiODcQrzINdTF" Comment="BackLight" Bounds="662,252,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="RTzaItGumFtOLSWcfeaBB8" Comment="FlipHZ" Bounds="883,494,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Ezz3P0Vq6rxOTqlcXOfmZX" Comment="FlipVT" Bounds="903,516,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="UQEi7FuE1KlLPSuWpee5JL" Comment="Brightness" Bounds="762,362,20,15" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:maximum p:Type="Int32">14</p:maximum>
+              <p:minimum p:Type="Int32">0</p:minimum>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="CSTYXFHyyjNNWNoTngiLYS" Comment="Contrast" Bounds="783,384,20,15" ShowValueBox="true" isIOBox="true" Value="11">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:maximum p:Type="Int32">14</p:maximum>
+              <p:minimum p:Type="Int32">0</p:minimum>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="TAA3v0teiVQPIZnvs09UFR" Comment="B/W" Bounds="864,472,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="NVNUKbrJAsRQK92HNI6Pwt" Comment="Saturation" Bounds="803,406,20,15" ShowValueBox="true" isIOBox="true" Value="4">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:maximum p:Type="Int32">14</p:maximum>
+              <p:minimum p:Type="Int32">0</p:minimum>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Um057EnFQITP1WLMB9rNUg" Comment="BrightPos" Bounds="742,340,20,15" ShowValueBox="true" isIOBox="true" Value="9">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:maximum p:Type="Int32">23</p:maximum>
+              <p:minimum p:Type="Int32">0</p:minimum>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="UaFgQULVaV9OFYYoEgjcQI" Comment="Sharpness" Bounds="824,428,20,15" ShowValueBox="true" isIOBox="true" Value="4">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:maximum p:Type="Int32">15</p:maximum>
+              <p:minimum p:Type="Int32">0</p:minimum>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="MpIRtDAi2lqLyF2IrEO241" Comment="GainLimit" Bounds="843,450,20,15" ShowValueBox="true" isIOBox="true" Value="2">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:maximum p:Type="Int32">15</p:maximum>
+              <p:minimum p:Type="Int32">0</p:minimum>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="DWJ4dD0qxXhNbHd9IU79at" Comment="Flicker" Bounds="683,274,20,15" ShowValueBox="true" isIOBox="true" Value="2">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:maximum p:Type="Int32">2</p:maximum>
+              <p:minimum p:Type="Int32">0</p:minimum>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="ISv8Bm0F8HSPw7j8hOITeg" Comment="On/Off" Bounds="923,539,35,15" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="BCW41VeJbfbLMKJsQvxCdG" Comment="SendAll" Bounds="605,642,49,48" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="603,693,54,19" Id="Uo7gYabecR4PUh0GiP5X2L">
+            <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="OnOpen" />
+            </p:NodeReference>
+            <Pin Id="Nl6Qoo1UJORO3xgIoI77JR" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Ctw886WKb52MznYdIXyjzJ" Name="Simulate" Kind="InputPin" />
+            <Pin Id="Ms3vbfnqhZ0LTmTgXfa2dD" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="Axz9iSDhCV7MbZi149MsGN" Comment="PresetIndex" Bounds="503,396,35,31" ShowValueBox="true" isIOBox="true" Value="6">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">15</p:fontsize>
+              <p:maximum p:Type="Int32">127</p:maximum>
+              <p:minimum p:Type="Int32">0</p:minimum>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Vfi7ZAkIYEuQL94dlOcECG" Comment="Set" Bounds="503,472,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="E9FBNVtFiUjM6Pd4pzjCJY" Comment="Reset" Bounds="503,513,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="NnrN2V1KpVmLEn74U1oIyk" Comment="Recall" Bounds="503,434,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="SMQMFDTar7QOlGLkKZdOWQ" Comment="PresetSpeed" Bounds="503,531,35,15" ShowValueBox="true" isIOBox="true" Value="23">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:maximum p:Type="Int32">23</p:maximum>
+              <p:minimum p:Type="Int32">0</p:minimum>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Rv5w4wJ7pYfQD3Ej7Rs2z4" Comment="ZoomTele" Bounds="373,396,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Press</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="AKGfIaIs0poLGQqeJIYuhD" Comment="ZoomWide" Bounds="373,434,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Press</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="VUgKTmfR81XM7qgy4Z2LqI" Comment="FocusFar" Bounds="373,510,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Press</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="DsviewZiDA5OwIhcWaL8b0" Comment="FocusNear" Bounds="373,472,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Press</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="C6wOaoydkQiLSM5FxVFW8l" Comment="ZoomFocusSpeed" Bounds="386,728,35,15" ShowValueBox="true" isIOBox="true" Value="7">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:maximum p:Type="Int32">7</p:maximum>
+              <p:minimum p:Type="Int32">0</p:minimum>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="UqlerqlTc0PPpcTIKD4GcD" Comment="" Bounds="203,396,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Press</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="U9emFyFhuqeOfDGOz5kb8f" Comment="" Bounds="250,396,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Press</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="NbezEaQA6ltLB9269eh1dP" Comment="" Bounds="297,396,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Press</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="P2unHGCQtzULYaMUi23Q0u" Comment="" Bounds="203,434,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Press</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="O7sroeO4mX7NQpXEWCRR3J" Comment="" Bounds="297,434,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Press</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="EZn3ksmVLvENJbOLwMPOsc" Comment="" Bounds="203,472,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Press</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="UtpEwXvWOsCOs7FWyG5KwZ" Comment="" Bounds="250,472,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Press</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="MKrUJiimhTzLQKL2T33MJt" Comment="" Bounds="297,472,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Press</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="VFiIWi2FHwWOYIYmppDwZW" Comment="" Bounds="250,434,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="164,777,825,19" Id="Lx0fOYxwmZROXun3i9I3s9">
+            <p:NodeReference LastCategoryFullName="PTZ" LastDependency="VL.PTZ.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="PTZ_UDP" />
+            </p:NodeReference>
+            <Pin Id="Ifq3Q1iu94sOH4Z342YmDh" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="JVaw6rsVqKAOEfnvRXXab0" Name="PanSpeed" Kind="InputPin" />
+            <Pin Id="AEDGxMJBn3LPz3k4tF4hG4" Name="TiltSpeed" Kind="InputPin" />
+            <Pin Id="QLH4V04bx6OM37DS729HGK" Name="UpLeft" Kind="InputPin" />
+            <Pin Id="GwyOW8u3CpkOKQPH4FZCam" Name="Up" Kind="InputPin" />
+            <Pin Id="GtRKbBsDyhzMc9mvL1sH8e" Name="UpRight" Kind="InputPin" />
+            <Pin Id="S56pQL3ZgpZMPjMXJWPoQA" Name="Left" Kind="InputPin" />
+            <Pin Id="Qeq1f2aMFiwMUsTXtswPS0" Name="Right" Kind="InputPin" />
+            <Pin Id="GxRQha77fQSMEQ6fcFxTG6" Name="DownLeft" Kind="InputPin" />
+            <Pin Id="FhhfAxwRwfpLcesllwM8LJ" Name="Down" Kind="InputPin" />
+            <Pin Id="KQvbTQY0dTSLfnjV1sewqs" Name="DownRight" Kind="InputPin" />
+            <Pin Id="PPwalE7Ezp7NxRzd7uLQwe" Name="GotoHome" Kind="InputPin" />
+            <Pin Id="Lmh5NTDzEd2PQL7uSj1yJU" Name="ZoomSpeed" Kind="InputPin" />
+            <Pin Id="TRRQ5VgE29lLnsiQymgS5k" Name="FocusSpeed" Kind="InputPin" />
+            <Pin Id="MBGzmn18gZiPId7Am1W5tr" Name="ZoomTele" Kind="InputPin" />
+            <Pin Id="Ejoz6rp1oMwLjR8wZP75Dr" Name="ZoomWide" Kind="InputPin" />
+            <Pin Id="Jf86ZJlHgfRM3utW29moGC" Name="FocusNear" Kind="InputPin" />
+            <Pin Id="MhjPcCDQ4GHNDIlXoT9cKc" Name="FocusFar" Kind="InputPin" />
+            <Pin Id="Bs3U2AvsJdJMC5AmUhg4zS" Name="PresetIndex" Kind="InputPin" />
+            <Pin Id="ESuaQQMw22UMZiDFx6U3mi" Name="Set" Kind="InputPin" />
+            <Pin Id="NHn86EbEkE2NyzU2PP5Hv1" Name="Reset" Kind="InputPin" />
+            <Pin Id="Cxdg5oZSf8BLIFRKUAhH8O" Name="Recall" Kind="InputPin" />
+            <Pin Id="QjFAcZ4P4zjNvYzsAiJId6" Name="PresetSpeed" Kind="InputPin" />
+            <Pin Id="RpvnvfvHEVHLibxxNkDvCn" Name="SendExtras" Kind="InputPin" />
+            <Pin Id="D290zqMJLIzMult5n7eO4m" Name="AutoFocus" Kind="InputPin" />
+            <Pin Id="B9oE3oGNct7QSt4KDZiBTB" Name="ExposureMode" Kind="InputPin" />
+            <Pin Id="HBHZwNMpcOZM9rdU9lbGmI" Name="BackLight" Kind="InputPin" />
+            <Pin Id="Q21sVqt1PHxMojdnb5maWr" Name="Flicker" Kind="InputPin" />
+            <Pin Id="BZezB6Jqvb8L6JdaSlVLuG" Name="Shutter" Kind="InputPin" />
+            <Pin Id="Qkq0AT3Ms1RLesQ8b4neWJ" Name="Iris" Kind="InputPin" />
+            <Pin Id="N4yJgIGz5lrQHB5msaMNnk" Name="BrightPos" Kind="InputPin" />
+            <Pin Id="T6FOLX7OxJzPXZC4ka7mqd" Name="Brightness" Kind="InputPin" />
+            <Pin Id="ULrbQrYtVHJNgpAH7XMw2w" Name="Contrast" Kind="InputPin" />
+            <Pin Id="Saufwpgwh5WNvyeCJUxb2Q" Name="Saturation" Kind="InputPin" />
+            <Pin Id="PpyZuABTouIM8BHJfVeBwk" Name="Sharpness" Kind="InputPin" />
+            <Pin Id="V79gjSSSxvQN7CIkNMthU8" Name="GainLimit" Kind="InputPin" />
+            <Pin Id="IwWVYwf0TdnODt3evbyzDK" Name="B/W" Kind="InputPin" />
+            <Pin Id="EhFZBpJmloGOYI3PLgekWE" Name="FlipHZ" Kind="InputPin" />
+            <Pin Id="TFHA7ngagPTLnBS6lr9oYM" Name="FlipVT" Kind="InputPin" />
+            <Pin Id="KVudtspaY1VNqsW4kRmARs" Name="On" Kind="InputPin" />
+            <Pin Id="BPHap1AkrprLo7KASUGkj3" Name="Off" Kind="InputPin" />
+            <Pin Id="IT2LBhC7jUCPeXb3m9CCQV" Name="Remote Address" Kind="InputPin" />
+            <Pin Id="GbXmqxQbSOVOL3p25AeNxv" Name="Remote Port" Kind="InputPin" IsHidden="true" />
+            <Pin Id="QGMVwaVe5kHPtZI97c1IwU" Name="Enabled" Kind="InputPin" />
+            <Pin Id="QxmDKP61ZkTOZtdRLiFbDE" Name="Is Open" Kind="OutputPin" />
+          </Node>
+          <Pad Id="EpcJQSsvYmlPHGX6OkLfQc" Comment="PanTiltSpeed" Bounds="166,729,35,15" ShowValueBox="true" isIOBox="true" Value="8">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:maximum p:Type="Int32">8</p:maximum>
+              <p:minimum p:Type="Int32">0</p:minimum>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="UdBta8hTWQcN2sGXIi68vj" Comment="Is Open" Bounds="166,825,35,35" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="921,602,56,19" Id="SweYrvPEtL2O3nBxzgAdiB">
+            <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="TogEdge" />
+            </p:NodeReference>
+            <Pin Id="DJKFp7l4pXpM8VnfVRWXmP" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="EoJdNaNQbIWLncbjG2VeVB" Name="Value" Kind="InputPin" />
+            <Pin Id="V0YBvlW4taHMNcrumsWw8v" Name="Up Edge" Kind="OutputPin" />
+            <Pin Id="DHOcfT9T8HNMN9il6Kqlr0" Name="Down Edge" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="921,660,54,19" Id="F7kGGHUU72GMD68a4axQkZ">
+            <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="OnOpen" />
+            </p:NodeReference>
+            <Pin Id="HmoV2DcL6WGQXSH47eS8Ig" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Sg4ocY21SZ2OY7BwpzaoVd" Name="Simulate" Kind="InputPin" />
+            <Pin Id="KmHfV30FVlJL3SGUCenEHR" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="JAolPUHXTjHPWgl6B80fLR" Bounds="192,206,217,80" ShowValueBox="true" isIOBox="true" Value="Module with all the PTZ options, there are reduced versions in the library, just use the one fits better in your needs">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="U49vUooDp4wP6KPYeoj3Cf" Name="Create" />
+        <Patch Id="D8JHzFWs9wSQRhYElwfKDq" Name="Update" />
+        <ProcessDefinition Id="VMMYkCAXmbaNtTUmKEOy6l">
+          <Fragment Id="T0TV2ciskWnOhZdWWHczdn" Patch="U49vUooDp4wP6KPYeoj3Cf" Enabled="true" />
+          <Fragment Id="Str1TSaliZ2PxK1UcadVS1" Patch="D8JHzFWs9wSQRhYElwfKDq" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="M2CbRNwa2MwQNuey7O3irW" Ids="BCW41VeJbfbLMKJsQvxCdG,Ctw886WKb52MznYdIXyjzJ" />
+        <Link Id="I6ilYLKidlvPWcVwqosi7z" Ids="UqlerqlTc0PPpcTIKD4GcD,QLH4V04bx6OM37DS729HGK" />
+        <Link Id="EPLu5vaeN52MWXoKyRw6b4" Ids="U9emFyFhuqeOfDGOz5kb8f,GwyOW8u3CpkOKQPH4FZCam" />
+        <Link Id="ONYoo4DJnDMPz8Kz4KVhmz" Ids="NbezEaQA6ltLB9269eh1dP,GtRKbBsDyhzMc9mvL1sH8e" />
+        <Link Id="LQwi4yV4aKpPM27KjRoJwy" Ids="P2unHGCQtzULYaMUi23Q0u,S56pQL3ZgpZMPjMXJWPoQA" />
+        <Link Id="QaAOhgx2X68OWb3gFZYejO" Ids="O7sroeO4mX7NQpXEWCRR3J,Qeq1f2aMFiwMUsTXtswPS0" />
+        <Link Id="RHPJ23Sf0mBNjCcQdzToUM" Ids="VFiIWi2FHwWOYIYmppDwZW,PPwalE7Ezp7NxRzd7uLQwe" />
+        <Link Id="MGhVzgXfNJtMcfW5OS4W77" Ids="EZn3ksmVLvENJbOLwMPOsc,GxRQha77fQSMEQ6fcFxTG6" />
+        <Link Id="ThqhmR8dUNVMBPTsl6mxzh" Ids="UtpEwXvWOsCOs7FWyG5KwZ,FhhfAxwRwfpLcesllwM8LJ" />
+        <Link Id="SBa15fHbCsiNoyr3Wu1MKM" Ids="MKrUJiimhTzLQKL2T33MJt,KQvbTQY0dTSLfnjV1sewqs" />
+        <Link Id="KY2x84NLAukLlhyDIsnFk9" Ids="EpcJQSsvYmlPHGX6OkLfQc,JVaw6rsVqKAOEfnvRXXab0" />
+        <Link Id="Htzr5ZfltqAO3v1R3X1yOj" Ids="EpcJQSsvYmlPHGX6OkLfQc,AEDGxMJBn3LPz3k4tF4hG4" />
+        <Link Id="FfM3URof7GBOkIVAAV6KXL" Ids="Rv5w4wJ7pYfQD3Ej7Rs2z4,MBGzmn18gZiPId7Am1W5tr" />
+        <Link Id="Jmzid6x4MgEQbKeNq8ajlw" Ids="AKGfIaIs0poLGQqeJIYuhD,Ejoz6rp1oMwLjR8wZP75Dr" />
+        <Link Id="BQ452GBcfilPygZXMQzPB7" Ids="DsviewZiDA5OwIhcWaL8b0,Jf86ZJlHgfRM3utW29moGC" />
+        <Link Id="OLcn7vOHsOzLs9iS0kYtQE" Ids="VUgKTmfR81XM7qgy4Z2LqI,MhjPcCDQ4GHNDIlXoT9cKc" />
+        <Link Id="S1BjZoKODBGO9dpaSoDfCB" Ids="Axz9iSDhCV7MbZi149MsGN,Bs3U2AvsJdJMC5AmUhg4zS" />
+        <Link Id="E2NQeJ5Pbq4NkcIsY6vFAJ" Ids="Vfi7ZAkIYEuQL94dlOcECG,ESuaQQMw22UMZiDFx6U3mi" />
+        <Link Id="C0zUuHtkVfgQOXG3zaGp0G" Ids="NnrN2V1KpVmLEn74U1oIyk,Cxdg5oZSf8BLIFRKUAhH8O" />
+        <Link Id="JreKvueOgaJPnRvb2UdpKc" Ids="E9FBNVtFiUjM6Pd4pzjCJY,NHn86EbEkE2NyzU2PP5Hv1" />
+        <Link Id="FwrpwrdAr4fOlV38D6uekS" Ids="LY6L5Yh4KttP4A7tryAfyJ,IT2LBhC7jUCPeXb3m9CCQV" />
+        <Link Id="LEE5YUHAC5HQOfC56yuu3K" Ids="Gk9aLt2ozh7OnO5RpJFTvh,QGMVwaVe5kHPtZI97c1IwU" />
+        <Link Id="A0aAfRP7ex9LkRoO8L0W3y" Ids="QxmDKP61ZkTOZtdRLiFbDE,UdBta8hTWQcN2sGXIi68vj" />
+        <Link Id="L26hqht2we9LWpElHB6FYl" Ids="Ms3vbfnqhZ0LTmTgXfa2dD,RpvnvfvHEVHLibxxNkDvCn" />
+        <Link Id="A6bYKn8Vq5eMB6MdO7irCB" Ids="MhmJcaGkLjlLTE4iLXqWck,D290zqMJLIzMult5n7eO4m" />
+        <Link Id="VL7RPuPra4zNvp2EYonb8B" Ids="U5OvzJbfIaKPMxNUjT6lbN,B9oE3oGNct7QSt4KDZiBTB" />
+        <Link Id="MKZ4Ts2Ybg7LA5Zj6kTHBu" Ids="L2X3x4jGOmiODcQrzINdTF,HBHZwNMpcOZM9rdU9lbGmI" />
+        <Link Id="UiPY8ahHr1tQMYSWlewodf" Ids="DWJ4dD0qxXhNbHd9IU79at,Q21sVqt1PHxMojdnb5maWr" />
+        <Link Id="SDAu73DFjcQMbZ48Uyt3bq" Ids="JgaKehmQRDDNbODZ22D1E1,BZezB6Jqvb8L6JdaSlVLuG" />
+        <Link Id="QebiF9zMOr0MY0fSlSoLPB" Ids="MWzT34cbAhdNVRHANJVY0b,Qkq0AT3Ms1RLesQ8b4neWJ" />
+        <Link Id="EPznPcN7v08LI7hyXkBMl2" Ids="Um057EnFQITP1WLMB9rNUg,N4yJgIGz5lrQHB5msaMNnk" />
+        <Link Id="KllbiCTaIMhNjI1SNlyLa7" Ids="UQEi7FuE1KlLPSuWpee5JL,T6FOLX7OxJzPXZC4ka7mqd" />
+        <Link Id="DjUIAvJnGsVLYiTSAutPsu" Ids="CSTYXFHyyjNNWNoTngiLYS,ULrbQrYtVHJNgpAH7XMw2w" />
+        <Link Id="EcWZxDmxOP1OcbFOzoM2R0" Ids="NVNUKbrJAsRQK92HNI6Pwt,Saufwpgwh5WNvyeCJUxb2Q" />
+        <Link Id="Ndn9DOeOZ9mOum8uutbZIV" Ids="UaFgQULVaV9OFYYoEgjcQI,PpyZuABTouIM8BHJfVeBwk" />
+        <Link Id="SmqqFsAhh19MQcsqwIrvu2" Ids="MpIRtDAi2lqLyF2IrEO241,V79gjSSSxvQN7CIkNMthU8" />
+        <Link Id="L2Lb0spPGxzPoVwGxGv426" Ids="TAA3v0teiVQPIZnvs09UFR,IwWVYwf0TdnODt3evbyzDK" />
+        <Link Id="HfPrVyvG9MyP2fxDmT2kQF" Ids="RTzaItGumFtOLSWcfeaBB8,EhFZBpJmloGOYI3PLgekWE" />
+        <Link Id="Q2uJ0tFFL6BPMDf2Tbep5g" Ids="Ezz3P0Vq6rxOTqlcXOfmZX,TFHA7ngagPTLnBS6lr9oYM" />
+        <Link Id="VpRyBorTPwWQJHQdamuEsN" Ids="SMQMFDTar7QOlGLkKZdOWQ,QjFAcZ4P4zjNvYzsAiJId6" />
+        <Link Id="TzMmOkoo8lkOUbEdhWUHjL" Ids="C6wOaoydkQiLSM5FxVFW8l,Lmh5NTDzEd2PQL7uSj1yJU" />
+        <Link Id="NDOtRpTHkRJL3DWB8sRkvJ" Ids="C6wOaoydkQiLSM5FxVFW8l,TRRQ5VgE29lLnsiQymgS5k" />
+        <Link Id="UalSGNTWsuZOUGonHCB2TL" Ids="ISv8Bm0F8HSPw7j8hOITeg,EoJdNaNQbIWLncbjG2VeVB" />
+        <Link Id="KsFq4NPzilVNnCF4JhNk8E" Ids="V0YBvlW4taHMNcrumsWw8v,Sg4ocY21SZ2OY7BwpzaoVd" />
+        <Link Id="UGvN6GlYMqVNVwkOPBxsC5" Ids="DHOcfT9T8HNMN9il6Kqlr0,BPHap1AkrprLo7KASUGkj3" />
+        <Link Id="TzsPcrRXmqLLZ3p1iAak16" Ids="KmHfV30FVlJL3SGUCenEHR,KVudtspaY1VNqsW4kRmARs" />
+      </Patch>
+    </Node>
+  </Patch>
+  <DocumentDependency Id="VdYssrXyBPfNs3WIxhREQL" Location="../VL.PTZ.vl" />
+</Document>
